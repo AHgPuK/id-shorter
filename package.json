@@ -18,7 +18,9 @@
   },
   "keywords": [
     "Short",
+    "shortener",
     "MongoDB",
+    "mongo",
     "ObjectId",
     "URL"
   ],

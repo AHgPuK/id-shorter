@@ -38,6 +38,7 @@ var shortId = mongoDBShortId.encode('565ffd0edf3d990540b3134c');
 Result: 48yD4jA45
 
 Use as MongoDB ObjectId reversible shorter (id made of `[a-zA-Z0-9]`)
+---
 ```javascript
 var ShortId = require('id-shorter');
 var mongoDBId = ShortId({
@@ -48,6 +49,7 @@ var shortId = mongoDBId.encode('565ffd0edf3d990540b3134c');
 Result: cdNI0lgCZ0YJ3Z0Z2Bl
 
 Use as BINARY to HEX converter (extreme usage :)
+---
 ```javascript
 var ShortId = require('id-shorter');
 var Bin2Hex = ShortId({

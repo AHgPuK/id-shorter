@@ -29,7 +29,7 @@ console.log('\nTest absolutely custom config');
 var Bin2Hex = ShortId({
 	base: '01',
 	encoding: '0123456789abcdef',
-	isReverse: false,
+	isInverse: false,
 	isFullId: true,
 });
 
@@ -40,7 +40,7 @@ var sourceValue = '0000000100100011010001010110011110001001101010111100110111101
 var result = Bin2Hex.encode(sourceValue);
 console.log('Binary to HEX:', sourceValue + ' = ' + result);
 
-Bin2Hex.reverse(true);
+Bin2Hex.inverse(true);
 var sourceValue = '0000000100100011010001010110011110001001101010111100110111101111'
 var result = Bin2Hex.encode(sourceValue);
 console.log('Binary to HEX:', sourceValue + ' = ' + result);

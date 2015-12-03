@@ -55,7 +55,7 @@ var ShortId = require('id-shorter');
 var Bin2Hex = ShortId({
 	base: '01',
 	encoding: '0123456789abcdef',
-	isReverse: false,
+	isInverse: false,
 	isFullId: true,
 });
 var result = Bin2Hex.encode('0000000100100011010001010110011110001001101010111100110111101111');

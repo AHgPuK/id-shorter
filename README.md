@@ -6,7 +6,6 @@ The module can be used in few modes.
 You can configure a generation of very short ids based on mongoDB ObjectIds using only timestamp + counter and dropping  machine id and process id.
 In this case a reverse operation is not possible.
 There is also a way to generate absolute indentical ids that include machine id and process id. This is a reversible conversion.
-I'm planning to include this feature in next release.
 
 You can use and configure any set of characters for generation. The most problem of similar modules is a requirement of charset with length of power of 2.
 This module is free from this limitation.

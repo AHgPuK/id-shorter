@@ -29,9 +29,9 @@ console.log('\nTest absolutely custom config');
 var Bin2Hex = ShortId({
 	base: '01',
 	encoding: '0123456789abcdef',
-	reverse: false,
+	isReverse: false,
 	isFullId: true,
-})
+});
 
 //shortId.setBase('01');
 //shortId.setEncoding('0123456789abcdef');

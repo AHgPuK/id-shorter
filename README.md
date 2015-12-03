@@ -2,9 +2,17 @@ Short MongoDB ObjectId
 ===================
 Generate short id's from MongoDB Object ID's for use in url's or other applications.
 
-Id's are generated from the timestamp and counter of the MongoDB Id, with some slight variation. They should be reasonably unique.
+The module can be used in few modes.
+You can configure a generation of very short ids based on mongoDB ObjectIds using only timestamp + counter and dropping  machine id and process id.
+In this case a reverse operation is not possible.
+There is also a way to generate absolute indentical ids that include machine id and process id. This is a reversible conversion.
+I'm planning to include this feature in next release.
 
-This is, unfortunately, a one-way function. It will reliably produce the same short id for the same MongoDB Id, but the operation can't be reversed (it is missing information about the machine id, process id, and most of the counter).
+You can use and configure any set of characters for generation. The most problem of similar modules is a requirement of charset with length of power of 2.
+This module is free from this limitation.
+It is very useful for generation short urls based on charset of only digits and letters.
+
+
 
 Install
 -------
@@ -22,6 +30,8 @@ $ git clone git@github.com:AHgPuK/shortobjectid.git
 
 Use
 ---
+
+
 
 Pass a MongoDB ObjectId (or a string that can be converted to one) and it will return a reasonably unique short id made of `[a-zA-Z0-9]`.
 

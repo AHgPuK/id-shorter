@@ -13,7 +13,6 @@ This module is free from this limitation.
 It is very useful for generation short urls based on charset of only digits and letters.
 
 
-
 Install
 -------
 Use NPM:
@@ -47,6 +46,17 @@ var mongoDBId = ShortId({
 var shortId = mongoDBId.encode('565ffd0edf3d990540b3134c');
 ```
 Result: cdNI0lgCZ0YJ3Z0Z2Bl
+
+Use as decoder from reversible id (id made of `[a-zA-Z0-9]`)
+---
+```javascript
+var ShortId = require('id-shorter');
+var mongoDBId = ShortId({
+	isFullId: true
+});
+var shortId = mongoDBId.decode('cdNI0lgCZ0YJ3Z0Z2Bl');
+```
+Result: 565ffd0edf3d990540b3134c
 
 Use as BINARY to HEX converter (extreme usage :)
 ---

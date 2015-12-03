@@ -19,13 +19,13 @@ Install
 Use NPM:
 
 ```bash
-$ npm install shortobjectid
+$ npm install id-shorter
 ```
 
 or Git:
 
 ```bash
-$ git clone git@github.com:AHgPuK/shortobjectid.git
+$ git clone git@github.com:AHgPuK/id-shorter.git
 ```
 
 Use

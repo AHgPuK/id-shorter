@@ -30,7 +30,7 @@ var Bin2Hex = ShortId({
 	base: '01',
 	encoding: '0123456789abcdef',
 	isInverse: false,
-	isFullId: true,
+	//isFullId: true,
 });
 
 //shortId.setBase('01');

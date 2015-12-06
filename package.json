@@ -1,6 +1,6 @@
 {
   "name": "id-shorter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A little module that replaces a long ObjectId value with short one keeping uniqueness. A charset for conversion is fully configurable and does not depend on requirement of 64 symbols. So it is possible to use only letters, letters+digits, digits etc.",
   "main": "index.js",
   "scripts": {
@@ -17,12 +17,15 @@
     "url": "git+https://github.com/AHgPuK/id-shorter.git"
   },
   "keywords": [
-    "Short",
+    "short",
+    "url",
     "shortener",
-    "MongoDB",
     "mongo",
-    "ObjectId",
-    "URL"
+    "mongodb",
+    "objectid",
+    "tiny",
+    "google",
+    "bit.ly"
   ],
   "bugs": {
     "url": "https://github.com/AHgPuK/id-shorter/issues"

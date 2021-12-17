@@ -9,7 +9,7 @@
   "author": "Andrey Hohutkin",
   "license": "MIT",
   "dependencies": {
-    "bson": "^0.4.20"
+    "bson": "^4.6.0"
   },
   "devDependencies": {},
   "repository": {
